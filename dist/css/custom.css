@@ -8472,8 +8472,9 @@ nav.top-nav a.nav-link {
 nav.top-nav a.nav-link:hover, nav.top-nav a.nav-link.active {
   border-bottom: 2px dotted #fff;
 }
-nav.top-nav a .navbar-brand svg * {
-  fill: #fff;
+nav.top-nav a.navbar-brand {
+  margin: 0;
+  padding: 0;
 }
 @media screen and (max-width: 1199px) {
   nav.top-nav #mob-navbar {
