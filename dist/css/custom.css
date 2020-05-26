@@ -8329,11 +8329,19 @@ a.navbar-brand:hover {
 }
 
 .logo {
+  min-height: 60px;
   width: auto !important;
+  max-width: 236px;
 }
 @media screen and (max-width: 992px) {
   .logo {
-    height: 45px !important;
+    min-height: 45px !important;
+    max-width: 177px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .logo {
+    max-width: 130px;
   }
 }
 
@@ -8634,6 +8642,12 @@ iframe {
 /* Footer */
 footer {
   background: linear-gradient(#f5f5f5, #daecfb);
+}
+footer .footer-logo {
+  border: none;
+}
+footer .footer-logo:hover {
+  border: none;
 }
 footer nav {
   border-top: 1px dotted rgba(115, 115, 115, 0.7);
