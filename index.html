@@ -34,7 +34,6 @@
   </head>
 
   <body data-spy="scroll" data-target="#main-navbar">
-
     <nav id="main-navbar" class="navbar navbar-expand-xl top-nav sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img class="logo" src="img/logo-header.svg" alt="logo" height="60"></a>
@@ -43,16 +42,17 @@
         </button>
 
         <div class="navbar-collapse collapse" id="mob-navbar">
-          <ul class="navbar-nav ml-auto">          
-            <li class="nav-item mx-3"><a class="d-md-inline-block nav-link" href="#">El proyecto</a></li>
+          <ul class="navbar-nav ml-auto text-center">          
+            <li class="nav-item mx-3"><a class="d-md-inline-block nav-link" href="#el-proyecto">El proyecto</a></li>
             <li class="nav-item mx-3"><a class="d-md-inline-block nav-link" href="#visualizaciones">Visualizaciones</a></li>
             <li class="nav-item mx-3"><a class="d-md-inline-block nav-link" href="#tecnologias">Tecnologías</a></li>
             <li class="nav-item mx-3"><a class="d-md-inline-block nav-link" href="#origen-de-datos">Origen de datos</a></li>
-            <li class="nav-item ml-3"><a class="d-md-inline-block btn primary-btn" href="https://github.com/facttic/apibueno">Colaborá</a></li>
+            <li class="nav-item mx-3 mt-2 mt-lg-0"><a class="d-md-inline-block btn primary-btn" href="https://github.com/facttic/apibueno">Colaborá</a></li>
           </ul>
         </div>
       </div>
     </nav>
+    
     <header class="curved-bottom">
       <div class="jumbotron-fluid">
         <div class="container">
@@ -60,7 +60,7 @@
             <div class="intro col-md-3 my-3 my-lg-5">
               <h1 class="mt-lg-5 mb-lg-4 pt-lg-5">API COVID-19</h1>
               <p class="mb-lg-5">Es una API consumible por aplicaciones para el seguimiento de la pandemia del Coronavirus en Argentina.</p>
-              <a class="btn primary-btn" href="#visualizaciones">Conocé más</a>
+              <a class="btn primary-btn" href="#el-proyecto">Conocé más</a>
             </div>
             <div class="api-screen col-md-5 my-3 my-lg-5 ml-auto ">
               <img src="img/api-screen.svg" class="mb-2" alt="API screenshot" />
@@ -73,6 +73,32 @@
         </div>
       </div>
     </header>
+
+      <section id="el-proyecto">
+        <div class="container">
+          <div class="row my-5">
+            <div class="col-md-5 mr-auto my-3 my-lg-5">
+              <h2 class="bordered-heading primary-border-bottom border-centered position-relative">El proyecto</h2>
+              <p>Durante los días de Semana Santa 2020, la <a target="_blank" href="https://facttic.org.ar">Federación Argentina de Cooperativas de Tecnología Innovación y Conocimiento <abbr title="Federacion Argentina de Cooperativas de Trabajo de Tecnologia Innovacion y Conocimiento"> (FACTTIC)</abbr></a>, organizó un Hackathon virtual llamado "HackTic": un encuentro de programadorxs pertenecientes a las distintas coperativas, cuyo objetivo fue el desarrollo colaborativo de software. </p>
+              <p>A lo largo del encuentro, tres equipos de desarrollo autogestionados trabajaron durante cuatro días en el desarrollo de tres ideas diferentes, una de ellas dió lugar a esta plataforma de visualización de datos referidos al impacto del COVID-19 en las provincias de la República Argentina.</p>
+            </div>
+            <div class="col-md-7 my-3 my-lg-5 text-center">
+              <img height="300" src="img/hacktick.svg" alt="hacktick" />
+            </div>
+          </div>
+
+          <div class="row my-5">
+            <div class="col-md-7 my-3 my-lg-5">
+              <img height="275" src="img/fit-logo.svg" alt="Flujo Intercooperativo de Trabajo" />
+            </div>            
+            <div class="col-md-5 ml-auto my-3 my-lg-5">
+              <h3 class="bordered-heading primary-border-bottom position-relative">Sobre el <abbr title='Flujo Intercooperativo de Trabajo'>FIT</abbr></h3>
+              <p>Si bien este proyecto es una experiencia más de trabajo colaborativo entre las cooperativas de la federación, no es una acción aislada. Las cooperativas de <a target="_blank" href="https://facttic.org.ar"><abbr title="Federacion Argentina de Cooperativas de Trabajo de Tecnologia Innovacion y Conocimiento"> FACTTIC</abbr></a> trabajan en equipo desde el inicio de la red para desarrollar proyectos en conjunto con objetivos sociales y comerciales, basando su accionar en el siguiente principio: <i>"Cooperar es mejor que competir."</i></p> 
+              <p>Para más información de trabajos colaborativos, te invitamos a <a target="_blank" href="https://facttic.org.ar/fit/">leer más</a> acerca del <a target="_blank" href="https://facttic.org.ar/fit/"><abbr title='Flujo Intercooperativo de Trabajo'>FIT</abbr></a>, el área de vinculación cooperativa de la federación.</p>              
+            </div>
+          </div>        
+        </div>
+      </section>
 
       <section id="visualizaciones">
         <h2 class="sr-only">Visualizaciones</h2>
@@ -87,8 +113,7 @@
                     height="600"
                 ></iframe>
                 </div>        
-              </div>
-              
+              </div>              
               <div class="col-md-4 ml-auto my-3 my-lg-5">
                 <h3 class="bordered-heading primary-border-bottom position-relative">Confirmados por Provincia</h3>
                 <p>Una comparativa del total de casos confirmados por provincia.</p>
@@ -110,7 +135,6 @@
               </div>
             </div>
           </div>
-
           <div class="jumbotron fluid more-graphics curved-top curved-bottom">
             <div class="container">
               <div class="row my-lg-5">
@@ -178,8 +202,7 @@
                   <p class="card-text">Se consulta el reporte diario que brinda el Ministerio de Salud de Argentina.</p>
                 </div>
               </div>
-            </div>
-      
+            </div>      
             <div class="col-sm-12 col-md-6 col-lg-6">
               <div class="card text-center primary-border-bottom shadow ml-lg-4 mr-lg-auto my-lg-0 mx-auto my-4">
                 <img class="mx-auto mb-2" src="img/silueta-argentina.svg" alt="Silueta Argentina">
@@ -203,7 +226,7 @@
             <h4 class="sr-only">Secciones</h4>
             <nav class="mb-5 footer-navbar">
               <ul class="text-small mb-0">
-                <li class="my-3 d-inline-block"><a class="nav-link accent-color" href="#">El proyecto</a></li>
+                <li class="my-3 d-inline-block"><a class="nav-link accent-color" href="#el-proyecto">El proyecto</a></li>
                 <li class="my-3 d-inline-block"><a class="nav-link accent-color" href="#visualizaciones">Visualizaciones</a></li>
                 <li class="my-3 d-inline-block"><a class="nav-link accent-color" href="#tecnologias">Tecnologías</a></li>
                 <li class="my-3 d-inline-block"><a class="nav-link accent-color" href="#origen-de-datos">Origen de datos</a></li>
@@ -211,7 +234,6 @@
               </ul>
             </nav>
           </div>
-
           <div class="col-12 col-md-12 text-center mx-auto mt-2">
             <small class="d-block text-muted made-with"><span>&lt;/&gt;</span> con <span class="accent-color">♥</span> por cooperativistas</small>
             <img class="d-block mx-auto mt-5 mb-3" height="20" src="img/licence.png" alt="licencia Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)" />
@@ -229,6 +251,9 @@
       $( document ).ready(function() {
         $('body').scrollspy({ target: '#main-navbar' })
       });   
+      $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+      });
     </script>
   </body>
 </html>

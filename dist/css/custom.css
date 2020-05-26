@@ -8475,6 +8475,15 @@ nav.top-nav a.nav-link:hover, nav.top-nav a.nav-link.active {
 nav.top-nav a .navbar-brand svg * {
   fill: #fff;
 }
+@media screen and (max-width: 1199px) {
+  nav.top-nav #mob-navbar {
+    transition: none;
+  }
+  nav.top-nav #mob-navbar ul {
+    padding-top: 50px;
+    height: 100vh;
+  }
+}
 @media screen and (max-width: 576px) {
   nav.top-nav .navbar-toggler-icon {
     font-size: 1.5rem !important;
@@ -8591,6 +8600,8 @@ iframe {
 .more-graphics {
   position: relative;
   padding-bottom: 2rem;
+  padding-left: initial;
+  padding-right: initial;
   background: linear-gradient(#f5f5f5, #daecfb);
 }
 
